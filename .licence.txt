@@ -1,4 +1,2 @@
 first file in repository
 property ob my.
-
-make some new text
