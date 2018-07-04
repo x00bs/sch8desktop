@@ -1,0 +1,30 @@
+
+<div id="container">
+	<div class ="topbut" id="main">Главная</div>
+	<div class ="topbut" id="important">Важная информация</div>
+	<div class ="topbut" id="circle" href="circle.htm">Кружки, секции</div>
+	<div class ="topbut" id="photo" href="photo.htm">Галерея</div>
+	<div class ="topbut" id="site" href="site.htm">Сайт школы</div>
+</div>
+ <script>
+ $("#main").on("click", function(){
+$(location).attr("href","http://site/index.htm");
+});
+
+$("#important").on("click", function(){
+$(location).attr("href","http://site/ob.htm");
+});
+
+$("#circle").on("click", function(){
+$(location).attr("href","http://site/circle.htm");
+});
+
+$("#site").on("click", function(){
+$(location).attr("href","http://site/site.htm");
+});
+
+$("#photo").on("click", function(){
+$(location).attr("href","http://site/photos.htm");
+});
+
+ </script>
