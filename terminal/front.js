@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  $("#topmenu").load("http://site/topmenu.htm"); 
+  $("#topmenu").load("/topmenu.htm"); 
   $("#leftmenu_ob").load("http://site/leftmenu_ob.htm"); 
 });
 
@@ -13,22 +13,22 @@ $(location).attr("href","http://site/index.htm");
 });
 
 $("#important").on("click", function(){
-$(location).attr("href","http://site/ob.htm");
+$(location).attr("href","/ob");
 });
 
 $("#circle").on("click", function(){
-$(location).attr("href","http://site/circle.htm");
+$(location).attr("href","/circle");
 });
 
 $("#site").on("click", function(){
-$(location).attr("href","http://site/site.htm");
+$(location).attr("href","/school");
 });
 
 $("#photo").on("click", function(){
-$(location).attr("href","http://site/photos.htm");
+$(location).attr("href","/photos");
 });
 
-
+//получить значение сайта после #
 function getHash(){
  if(location.hash)
   return location.hash ;
