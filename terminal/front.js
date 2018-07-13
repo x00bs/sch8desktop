@@ -1,8 +1,9 @@
+/*
 $( document ).ready(function() {
   $("#topmenu").load("./topmenu.htm"); 
   $("#leftmenu_ob").load("http://site/leftmenu_ob.htm"); 
 });
-
+*/
 $(".MenuBut").on("click", function(){
 //$(".MainTable").css({"height":"20%"});
 
