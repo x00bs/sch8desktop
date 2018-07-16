@@ -6,7 +6,9 @@
 </head>
 
 <body>
-<div id="topmenu"></div>
+ <?php include_once ("../topmenu.htm")?>
+
+ <iframe width=100% height=87% src="http://sch8.ucoz.ru"></iframe>
 
 </body>
 
@@ -17,5 +19,4 @@ $( document ).ready(function() {
   $("#topmenu").load("../topmenu.htm"); 
   })
 </script>
-
-</html>
+  </html>

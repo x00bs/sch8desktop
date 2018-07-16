@@ -6,8 +6,7 @@
 </head>
 
 <body>
-
-<div id="topmenu"></div>
+ <?php include_once ("../topmenu.htm")?>
 
 </body>
 

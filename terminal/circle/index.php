@@ -7,9 +7,7 @@
 </head>
 
 <body>
-<div id="topmenu"></div>
- <!-- div для фиктивного занятия места под верхним меню -->
- <div style="display:hidden; height:100px"></div>
+ <?php include_once ("../topmenu.htm")?>
  <div id="CircleLeftMenuDiv">
  <ul id="CircleLeftMenu">
  </ul>
