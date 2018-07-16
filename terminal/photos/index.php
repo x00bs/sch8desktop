@@ -7,14 +7,26 @@
 
 <body>
 <?php include_once ("../topmenu.htm")?>
-        <div>
-            <button onclick="prev()"> Prev </button>
-            <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" width="200px" height="100px"/>
-            <button onclick="next()"> Next </button>
+        <div align=center>
+			<div id="phototext"></div>
+            <p>
+            <img id="slider" width="400" height="300"/>
+			</p>
+			<p>
+			<button class="nav-item" onclick="prev()"> Назад </button>
+            <button class="nav-item" onclick="next()"> Далее </button>
+			</p>
         </div>
 </body>
 
 <footer></footer>
+<script src="photos.js"></script>
+<script>
+$( document ).ready(function() {
+  $("#slider").attr("src","pic/" + num + ".jpg"); 
+	var nnum=num+1;
+  $("#phototext").html("Фото "+nnum+" из "+PicNum);
 
-
+});
+</script>
 </html>

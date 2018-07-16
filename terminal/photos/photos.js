@@ -1,25 +1,29 @@
- var images = [
-    'http://www.sololearn.com/uploads/slider/1.jpg', 
-    'http://www.sololearn.com/uploads/slider/2.jpg', 
-    'http://www.sololearn.com/uploads/slider/3.jpg'
-];
-var PicNum=3;
-var num = getRandomInt(0,PicNum)
+
+var PicNum=5;
+var num = getRandomInt(0,PicNum);
 function next() {
     var slider = document.getElementById('slider');
-    num++;
-    if(num >= images.length) {
+    var phototext=document.getElementById('phototext');
+	num++;
+    if(num >= PicNum) {
         num = 0;
     }
-    slider.src = images[num];
+    slider.src = "pic/" + num + ".jpg";
+	var nnum=num+1;
+	phototext.innerHTML="Фото "+nnum+" из "+PicNum;
 }
 function prev() {
     var slider = document.getElementById('slider');
-    num--;
+    var phototext=document.getElementById('phototext');
+	num--;
     if(num < 0) {
-        num = images.length-1;
+        num = PicNum-1;
     }
-    slider.src = images[num];
+    
+	slider.src = "pic/" + num + ".jpg";
+	var nnum=num+1;
+	phototext.innerHTML="Фото "+nnum+" из "+PicNum;
+	
 }
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
