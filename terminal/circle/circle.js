@@ -1,10 +1,11 @@
 $( document ).ready(function() {
     var myCircles = { 
       "karate": "Каратэ"
-     ,"skalolaz": "Скалолазание"}
+     ,"skalolaz": "Скалолазание"
+	 ,"basket": "Баскетбол"}
      
   $.each(myCircles, function( index, value ) {
-  $("<ul class='CircleLeftUl'><a href='/text/"+index+".htm'</a>"+value+"</ul>").appendTo("#CircleLeftMenu")
+  $("<a class='side-nav-but' href='/text/"+index+".htm'>"+value+"</a>").appendTo("#CircleLeftMenu")
 	})   
 
   })

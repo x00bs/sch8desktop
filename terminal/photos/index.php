@@ -10,7 +10,7 @@
         <div align=center>
 			<div id="phototext"></div>
             <p>
-            <img id="slider" width="400" height="300"/>
+            <img id="slider" height="600"/>
 			</p>
 			<p>
 			<button class="nav-item" onclick="prev()"> Назад </button>

@@ -7,16 +7,11 @@
 
 <body>
  <?php include_once ("../topmenu.htm")?>
-
- <iframe width=100% height=87% src="http://sch8.ucoz.ru"></iframe>
-
+ <div align=center>
+ <iframe  width=95% height=80% src="http://sch8.ucoz.ru"></iframe>
+ </div>
 </body>
 
 <footer></footer>
 
-<script>
-$( document ).ready(function() {
-  $("#topmenu").load("../topmenu.htm"); 
-  })
-</script>
   </html>
