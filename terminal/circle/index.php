@@ -17,7 +17,7 @@
 	-->
   </td>
   <td>
-  <div class="MainText">Text</div>
+  <div id="MainText"></div>
   </td>
  </tr>
 </table>
@@ -25,29 +25,23 @@
 
 <footer></footer>
 <script>
-
-$( document ).ready(function() {
     var myCircles = { 
       "karate": "Каратэ"
      ,"skalolaz": "Скалолазание"
 	 ,"basket": "Баскетбол"}
-     
+
   $.each(myCircles, function( index, value ) {
    $("<a class='side-nav-but' href='' id='"+index+"'>"+value+"</a>").appendTo("#CircleLeftMenu");
    }) 
-   
-   $( ".side-nav-but" ).click(function() {
-   alert( "Handler for .click() ");
-   });
-  });
-  
+       
 
-// + $(this).prop("id") 
-  function getHash(){
- if(location.hash)
-  return location.hash ;
- else
-  return NULL;	 
-}
+   $( ".side-nav-but" ).click(function() {
+   alert( "/info/"+$(this).attr("id")+".htm");
+  // $("<b>text</b>").appendTo("#MainText");
+	$(location).attr("href","#"+$(this).attr("id"));
+	//	$( "#MainText" ).html("/info/"+$(this).attr("id")+".htm")
+	//$( "#MainText" ).text("<b>LOL</b>");
+   });
+
 </script>
 </html>
