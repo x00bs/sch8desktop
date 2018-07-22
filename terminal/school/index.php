@@ -8,7 +8,7 @@
 <body>
  <?php include_once ("../topmenu.htm")?>
  <div align=center>
- <iframe  width=95% height=75% src="http://sch8.ucoz.ru"></iframe>
+ <iframe width=95% height=75% src="http://sch8.ucoz.ru/index/kiosk/0-135"></iframe>
  </div>
 </body>
 
